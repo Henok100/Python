@@ -58,8 +58,8 @@ def Send():
     for Rowindex in range(NUMRows):
         for UAVindex in range(numUavs):
             temp = XYZ_NumPyArray[UAVindex] 
-            x = temp[Rowindex][0]
-            y = temp[Rowindex][1]
+            x = temp[Rowindex][0] - 200
+            y = temp[Rowindex][1] - 300
             z = temp[Rowindex][2]
 
             toSend = "{X},{Y},{Z}".format(X = round(x, 1), Y = round(y, 1), Z = round(z, 1))
