@@ -5,7 +5,16 @@ df = []
 #Time = []
 XYZ_NumPyArray = []
 
-csv_filename = ['BahirDar/BahirDar2_10_0_path_test.csv', 'BahirDar/BahirDar2_10_0_path_test.csv']
+csv_filename = ['Foios/Foios_0_path_test.csv', \
+                'Foios/Foios_1_path_test.csv', \
+                'Foios/Foios_2_path_test.csv', \
+                'Foios/Foios_3_path_test.csv', \
+                'Foios/Foios_4_path_test.csv', \
+                'Foios/Foios_5_path_test.csv', \
+                'Foios/Foios_6_path_test.csv', \
+                'Foios/Foios_7_path_test.csv', \
+                'Foios/Foios_8_path_test.csv', \
+                'Foios/Foios_9_path_test.csv']
 
 def PortList(numUavs):
     PORT = []
@@ -45,9 +54,6 @@ def PreProcessor(df):
     Location1 = df.round(1)
     Location1 = Location1.drop_duplicates(subset=['x(m)'], keep='last')
     Location1 = Location1.drop_duplicates(subset=['y(m)'], keep='last')
-
-    # Location1['x(m)'] = Location1['x(m)'] - 664011.13     #Treneto_1
-    # Location1['y(m)'] = Location1['y(m)'] - 5104328.61
 
     Location1['x(m)'] = Location1['x(m)'] - 324826.13     #BahirDar2
     Location1['y(m)'] = Location1['y(m)'] - 1282291.61    

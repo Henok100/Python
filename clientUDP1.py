@@ -12,7 +12,7 @@ FORMAT = 'utf-8'
 
 #For Uavs
 
-numUavs = 2     #Change the number as desired.
+numUavs = 10     #Change the number as desired.
 numRows = []
 LocationList = []
 
@@ -23,7 +23,16 @@ ADDR = Methods1.AddrList(CLIENT, PORT, numUavs)
 PORT_Protocol = 9000
 ADDR_Protocol = (CLIENT, PORT_Protocol)  
 
-csv_filename = ['BahirDar/BahirDar2_10_0_path_test.csv', 'BahirDar/BahirDar2_10_0_path_test.csv']
+csv_filename = ['Foios/Foios_0_path_test.csv', \
+                'Foios/Foios_1_path_test.csv', \
+                'Foios/Foios_2_path_test.csv', \
+                'Foios/Foios_3_path_test.csv', \
+                'Foios/Foios_4_path_test.csv', \
+                'Foios/Foios_5_path_test.csv', \
+                'Foios/Foios_6_path_test.csv', \
+                'Foios/Foios_7_path_test.csv', \
+                'Foios/Foios_8_path_test.csv', \
+                'Foios/Foios_9_path_test.csv']
 
 ClientSocket = Methods1.SocketCreator()
 
@@ -49,14 +58,9 @@ def Send():
     for Rowindex in range(NUMRows):
         for UAVindex in range(numUavs):
             temp = XYZ_NumPyArray[UAVindex] 
-            if UAVindex == 1:
-                x = temp[Rowindex][0] + 30
-                y = temp[Rowindex][1] + 30
-                z = temp[Rowindex][2]
-            else: 
-                x = temp[Rowindex][0]
-                y = temp[Rowindex][1]
-                z = temp[Rowindex][2]
+            x = temp[Rowindex][0]
+            y = temp[Rowindex][1]
+            z = temp[Rowindex][2]
 
             toSend = "{X},{Y},{Z}".format(X = round(x, 1), Y = round(y, 1), Z = round(z, 1))
             print(toSend)
