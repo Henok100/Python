@@ -70,4 +70,4 @@ def Send():
         time.sleep(Time[t+1] - Time[t])    
 
 SendProtocolMessage()
-Send()
+#Send()
