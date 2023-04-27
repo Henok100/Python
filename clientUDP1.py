@@ -51,6 +51,7 @@ def SendProtocolMessage():
     for j in range(numUavs-1):
         message = {"senderID":0,"receiverID":j,"payload":"Hello"}
         ClientSocket.sendto(json.dumps(message).encode(FORMAT), ADDR_Protocol)
+        print("Random Message Sent")
 
 #For UAV
 def Send():
