@@ -36,12 +36,6 @@ csv_filename = ['Foios/Foios_0_path_test.csv', \
 
 ClientSocket = Methods1.SocketCreator()
 
-#for Protocol message
-def SendProtocolMessage():
-    for j in range(numUavs-1):
-        message = {"senderID":0,"receiverID":j,"payload":"Hello"}
-        ClientSocket.sendto(json.dumps(message).encode(FORMAT), ADDR_Protocol)
-
 XYZ_Dataframe = Methods1.DataFrameListMaker(numUavs)
 
 Time = Methods1.TimeExtractor(pd.read_csv(csv_filename[0]))
@@ -52,15 +46,21 @@ for i in range(numUavs):
 
 NUMRows = min(numRows)
 
+#for Protocol message
+def SendProtocolMessage():
+    for j in range(numUavs-1):
+        message = {"senderID":0,"receiverID":j,"payload":"Hello"}
+        ClientSocket.sendto(json.dumps(message).encode(FORMAT), ADDR_Protocol)
+
 #For UAV
 def Send():
     t = -1
     for Rowindex in range(NUMRows):
-        SendProtocolMessage()
+        #SendProtocolMessage()
         for UAVindex in range(numUavs):
             temp = XYZ_NumPyArray[UAVindex] 
-            x = temp[Rowindex][0] - 200
-            y = temp[Rowindex][1] - 300
+            x = temp[Rowindex][0]
+            y = temp[Rowindex][1]
             z = temp[Rowindex][2]
 
             toSend = "{X},{Y},{Z}".format(X = round(x, 1), Y = round(y, 1), Z = round(z, 1))
@@ -69,4 +69,7 @@ def Send():
             ClientSocket.sendto(toSend.encode(FORMAT), ADDR[UAVindex])
         t = t + 1
         time.sleep(Time[t+1] - Time[t])    
-Send()
+while True:
+    SendProtocolMessage()
+
+#Send()
