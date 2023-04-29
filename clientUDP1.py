@@ -23,16 +23,16 @@ ADDR = Methods1.AddrList(CLIENT, PORT, numUavs)
 PORT_Protocol = 9000
 ADDR_Protocol = (CLIENT, PORT_Protocol)  
 
-csv_filename = ['Foios/Foios_0_path_test.csv', \
-                'Foios/Foios_1_path_test.csv', \
-                'Foios/Foios_2_path_test.csv', \
-                'Foios/Foios_3_path_test.csv', \
-                'Foios/Foios_4_path_test.csv', \
-                'Foios/Foios_5_path_test.csv', \
-                'Foios/Foios_6_path_test.csv', \
-                'Foios/Foios_7_path_test.csv', \
-                'Foios/Foios_8_path_test.csv', \
-                'Foios/Foios_9_path_test.csv']
+csv_filename = ['Path2/Path2_0_path_test.csv', \
+                'Path2/Path2_1_path_test.csv', \
+                'Path2/Path2_2_path_test.csv', \
+                'Path2/Path2_3_path_test.csv', \
+                'Path2/Path2_4_path_test.csv', \
+                'Path2/Path2_5_path_test.csv', \
+                'Path2/Path2_6_path_test.csv', \
+                'Path2/Path2_7_path_test.csv', \
+                'Path2/Path2_8_path_test.csv', \
+                'Path2/Path2_9_path_test.csv']
 
 ClientSocket = Methods1.SocketCreator()
 

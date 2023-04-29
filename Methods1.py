@@ -5,16 +5,16 @@ df = []
 #Time = []
 XYZ_NumPyArray = []
 
-csv_filename = ['Foios/Foios_0_path_test.csv', \
-                'Foios/Foios_1_path_test.csv', \
-                'Foios/Foios_2_path_test.csv', \
-                'Foios/Foios_3_path_test.csv', \
-                'Foios/Foios_4_path_test.csv', \
-                'Foios/Foios_5_path_test.csv', \
-                'Foios/Foios_6_path_test.csv', \
-                'Foios/Foios_7_path_test.csv', \
-                'Foios/Foios_8_path_test.csv', \
-                'Foios/Foios_9_path_test.csv']
+csv_filename = ['Path2/Path2_0_path_test.csv', \
+                'Path2/Path2_1_path_test.csv', \
+                'Path2/Path2_2_path_test.csv', \
+                'Path2/Path2_3_path_test.csv', \
+                'Path2/Path2_4_path_test.csv', \
+                'Path2/Path2_5_path_test.csv', \
+                'Path2/Path2_6_path_test.csv', \
+                'Path2/Path2_7_path_test.csv', \
+                'Path2/Path2_8_path_test.csv', \
+                'Path2/Path2_9_path_test.csv']
 
 def PortList(numUavs):
     PORT = []
@@ -55,8 +55,11 @@ def PreProcessor(df):
     Location1 = Location1.drop_duplicates(subset=['x(m)'], keep='last')
     Location1 = Location1.drop_duplicates(subset=['y(m)'], keep='last')
 
-    Location1['x(m)'] = Location1['x(m)'] - 679213.92    #Foios
-    Location1['y(m)'] = Location1['y(m)'] - 4461842.09    
+    # Location1['x(m)'] = Location1['x(m)'] - 679213.92    #Foios_1
+    # Location1['y(m)'] = Location1['y(m)'] - 4461842.09    
+
+    Location1['x(m)'] = Location1['x(m)'] - 679164.59    #Foios_2
+    Location1['y(m)'] = Location1['y(m)'] - 4461886.75    
 
     Location1 = Location1.drop_duplicates(subset=['x(m)'], keep='last')
     Location1 = Location1.drop_duplicates(subset=['y(m)'], keep='last')
