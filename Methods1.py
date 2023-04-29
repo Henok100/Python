@@ -5,7 +5,6 @@ import numpy as np
 import pandas as pd
 import socket
 df = []
-#Time = []
 XYZ_NumPyArray = []
 
 csv_filename = ['Path2/Path2_0_path_test.csv', \
