@@ -44,7 +44,7 @@ XYZ_NumPyArray= Methods1.NumPyArrayMaker(XYZ_Dataframe, numUavs)
 for i in range(numUavs):
      numRows.append(Methods1.numRows(XYZ_NumPyArray[i])) 
 
-NUMRows = min(numRows)
+NUMRows = min(numRows)  #
 
 #for Protocol message
 def SendProtocolMessage():
