@@ -1,14 +1,14 @@
-Total time: 0:05:04
-	UAV 0: 0:04:55
-	UAV 1: 0:04:56
-	UAV 2: 0:04:57
-	UAV 3: 0:04:58
-	UAV 4: 0:04:59
-	UAV 5: 0:05:00
-	UAV 6: 0:05:01
-	UAV 7: 0:05:02
-	UAV 8: 0:05:03
-	UAV 9: 0:05:04
+Total time: 0:04:56
+	UAV 0: 0:04:48
+	UAV 1: 0:04:48
+	UAV 2: 0:04:49
+	UAV 3: 0:04:50
+	UAV 4: 0:04:51
+	UAV 5: 0:04:52
+	UAV 6: 0:04:53
+	UAV 7: 0:04:54
+	UAV 8: 0:04:55
+	UAV 9: 0:04:56
 
 Simulation parameters:
 	Number of UAVs: 10
@@ -24,7 +24,7 @@ Performance parameters:
 General parameters:
 	Enable verbose logging: disabled
 UAV synchronization protocol: Mission
-UAV to UAV communications parameters:com.api.communications.lowLevel.CommLinkObjectOmnetpp@4ddced80
+UAV to UAV communications parameters:com.api.communications.lowLevel.CommLinkObjectOmnetpp@1534f01b
 UAV Collision detection parameters:
 	Enable collision detection: no
 Wind: no
