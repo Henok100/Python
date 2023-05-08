@@ -10,7 +10,7 @@ XYZ_NumPyArray = []
 # csv_filename = ['_20m/_20m_0_path_test.csv', \
 #                 '_20m/_20m_1_path_test.csv', \
 #                 '_20m/_20m_2_path_test.csv', \
-#                 '_20m/_ 20m_3_path_test.csv', \
+#                 '_20m/_20m_3_path_test.csv', \
 #                 '_20m/_20m_4_path_test.csv', \
 #                 '_20m/_20m_5_path_test.csv', \
 #                 '_20m/_20m_6_path_test.csv', \
