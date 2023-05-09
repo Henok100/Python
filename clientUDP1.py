@@ -10,7 +10,7 @@ import pandas as pd
 CLIENT = Methods1.GetHostName()
 FORMAT = 'utf-8'
 
-#For Uavs
+#For UAVs
 
 numUavs = 10     #Change the number as desired.
 numRows = []
