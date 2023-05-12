@@ -4,10 +4,11 @@ from tkinter import Tk
 from tkinter.filedialog import askopenfilename
 from pyproj import Proj
 import math 
+import random
 
 def init_df():
 	#filename = getFileName()
-	filename = "/media/henok/Masters/Python/Python/lines.csv"
+	filename = "lines.csv"
 	print("reading shapeFile")
 	df = pd.read_csv(filename, delimiter=';')
 	df = df.sort_values(by=['osm_id'])
@@ -34,7 +35,7 @@ def get_building(buildingId):
 	building = building.reset_index(drop=True)
 	return building
 
-def make_wall(wall):
+def make_wall(wall, Height):
 	# in omnet a wall is rotated in its center
 	# so starting from the start and end point
 	# we must calculate its length (widht always 1)
@@ -61,7 +62,7 @@ def make_wall(wall):
 	angle = -round(math.degrees(angle)*100)/100 #in omnet positive angle is clockwise
 	length = round((length)*100)/100
 
-	print_wall(posx,posy,angle,length,1,50)
+	print_wall(posx,posy,angle,length,1,Height)
 
 
 
@@ -85,12 +86,13 @@ if __name__ == "__main__":
 	centerY = 4583290.85
 	f = open("barcelona.xml", "w")
 	print_header(f)
-	
+	3
 	buildingIds = df['osm_id'].drop_duplicates()
 	for buildingId in buildingIds:
 		building = get_building(buildingId)
+		Height = random.randint(20, 140)
 		for index, wall in building.iterrows():
-			make_wall(wall)
+			make_wall(wall, Height)
 
 	print_footer(f)
 	f.close()
