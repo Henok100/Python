@@ -8,7 +8,7 @@ import random
 
 def init_df():
 	#filename = getFileName()
-	filename = "lines.csv"
+	filename = "BarcelonaPart2.csv"
 	print("reading shapeFile")
 	df = pd.read_csv(filename, delimiter=';')
 	df = df.sort_values(by=['osm_id'])
@@ -84,7 +84,7 @@ if __name__ == "__main__":
 	converter = Proj(proj='utm', zone=31, ellps='WGS84', preserve_units=False)
 	centerX = 431054.33
 	centerY = 4583290.85
-	f = open("barcelona.xml", "w")
+	f = open("BarcelonaPart2.xml", "w")
 	print_header(f)
 	3
 	buildingIds = df['osm_id'].drop_duplicates()
