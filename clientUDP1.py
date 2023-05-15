@@ -2,12 +2,12 @@
     By Henok Gashaw 
 """
 # Importing Libraries
-import Methods1
+import Method
 import json
 import time
 import pandas as pd
 
-CLIENT = Methods1.GetHostName()
+CLIENT = Method.GetHostName()
 FORMAT = 'utf-8'
 
 #For UAVs
@@ -16,8 +16,8 @@ numUavs = 10     #Change the number as desired.
 numRows = []
 LocationList = []
 
-PORT = Methods1.PortList(numUavs)
-ADDR = Methods1.AddrList(CLIENT, PORT, numUavs) 
+PORT = Method.PortList(numUavs)
+ADDR = Method.AddrList(CLIENT, PORT, numUavs) 
 
 #For Protocol Message
 PORT_Protocol = 9000
@@ -56,15 +56,15 @@ csv_filename = ['_60m/_60m_0_path_test.csv', \
 #                 '_120m/_120m_8_path_test.csv', \
 #                 '_120m/_120m_9_path_test.csv']
 
-ClientSocket = Methods1.SocketCreator()
+ClientSocket = Method.SocketCreator()
 
-XYZ_Dataframe = Methods1.DataFrameListMaker(numUavs)
+XYZ_Dataframe = Method.DataFrameListMaker(numUavs)
 
-Time = Methods1.TimeExtractor(pd.read_csv(csv_filename[0]))
-XYZ_NumPyArray= Methods1.NumPyArrayMaker(XYZ_Dataframe, numUavs)
+Time = Method.TimeExtractor(pd.read_csv(csv_filename[0]))
+XYZ_NumPyArray= Method.NumPyArrayMaker(XYZ_Dataframe, numUavs)
 
 for i in range(numUavs):
-     numRows.append(Methods1.numRows(XYZ_NumPyArray[i])) 
+     numRows.append(Method.numRows(XYZ_NumPyArray[i])) 
 
 NUMRows = min(numRows)  #
 

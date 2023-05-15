@@ -1,14 +1,14 @@
 import pandas as pd
 import matplotlib.pyplot as plt
-from tkinter import Tk
-from tkinter.filedialog import askopenfilename
+#from tkinter import Tk
+#from tkinter.filedialog import askopenfilename
 from pyproj import Proj
 import math 
 import random
 
 def init_df():
 	#filename = getFileName()
-	filename = "lines.csv"
+	filename = "barc18.csv"
 	print("reading shapeFile")
 	df = pd.read_csv(filename, delimiter=';')
 	df = df.sort_values(by=['osm_id'])
@@ -84,7 +84,7 @@ if __name__ == "__main__":
 	converter = Proj(proj='utm', zone=31, ellps='WGS84', preserve_units=False)
 	centerX = 431054.33
 	centerY = 4583290.85
-	f = open("barcelona.xml", "w")
+	f = open("barc18.xml", "w")
 	print_header(f)
 	3
 	buildingIds = df['osm_id'].drop_duplicates()
