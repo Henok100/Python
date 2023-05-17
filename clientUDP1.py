@@ -23,27 +23,27 @@ ADDR = Method.AddrList(CLIENT, PORT, numUavs)
 PORT_Protocol = 9000
 ADDR_Protocol = (CLIENT, PORT_Protocol)  
 
-# csv_filename = ['_20m/_20m_0_path_test.csv', \
-#                 '_20m/_20m_1_path_test.csv', \
-#                 '_20m/_20m_2_path_test.csv', \
-#                 '_20m/_20m_3_path_test.csv', \
-#                 '_20m/_20m_4_path_test.csv', \
-#                 '_20m/_20m_5_path_test.csv', \
-#                 '_20m/_20m_6_path_test.csv', \
-#                 '_20m/_20m_7_path_test.csv', \
-#                 '_20m/_20m_8_path_test.csv', \
-#                 '_20m/_20m_9_path_test.csv']
+csv_filename = ['_20m/_20m_0_path_test.csv', \
+                '_20m/_20m_1_path_test.csv', \
+                '_20m/_20m_2_path_test.csv', \
+                '_20m/_20m_3_path_test.csv', \
+                '_20m/_20m_4_path_test.csv', \
+                '_20m/_20m_5_path_test.csv', \
+                '_20m/_20m_6_path_test.csv', \
+                '_20m/_20m_7_path_test.csv', \
+                '_20m/_20m_8_path_test.csv', \
+                '_20m/_20m_9_path_test.csv']
 
-csv_filename = ['_60m/_60m_0_path_test.csv', \
-                '_60m/_60m_1_path_test.csv', \
-                '_60m/_60m_2_path_test.csv', \
-                '_60m/_60m_3_path_test.csv', \
-                '_60m/_60m_4_path_test.csv', \
-                '_60m/_60m_5_path_test.csv', \
-                '_60m/_60m_6_path_test.csv', \
-                '_60m/_60m_7_path_test.csv', \
-                '_60m/_60m_8_path_test.csv', \
-                '_60m/_60m_9_path_test.csv']
+# csv_filename = ['_60m/_60m_0_path_test.csv', \
+#                 '_60m/_60m_1_path_test.csv', \
+#                 '_60m/_60m_2_path_test.csv', \
+#                 '_60m/_60m_3_path_test.csv', \
+#                 '_60m/_60m_4_path_test.csv', \
+#                 '_60m/_60m_5_path_test.csv', \
+#                 '_60m/_60m_6_path_test.csv', \
+#                 '_60m/_60m_7_path_test.csv', \
+#                 '_60m/_60m_8_path_test.csv', \
+#                 '_60m/_60m_9_path_test.csv']
 
 # csv_filename = ['_120m/_120m_0_path_test.csv', \
 #                 '_120m/_120m_1_path_test.csv', \
@@ -79,7 +79,7 @@ def SendProtocolMessage():
 def Send():
     t = -1
     for Rowindex in range(NUMRows):
-        SendProtocolMessage()
+        #SendProtocolMessage()
         for UAVindex in range(numUavs):
             temp = XYZ_NumPyArray[UAVindex] 
             x = temp[Rowindex][0]
