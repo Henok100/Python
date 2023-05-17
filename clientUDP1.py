@@ -78,8 +78,11 @@ def SendProtocolMessage():
 #For UAV
 def Send():
     t = -1
+    counter = 5;
     for Rowindex in range(NUMRows):
-        #SendProtocolMessage()
+        if(counter % 5 == 0):
+            SendProtocolMessage()
+        
         for UAVindex in range(numUavs):
             temp = XYZ_NumPyArray[UAVindex] 
             x = temp[Rowindex][0]
@@ -90,6 +93,7 @@ def Send():
             print(toSend)
             print("UAV ", str(UAVindex))
             ClientSocket.sendto(toSend.encode(FORMAT), ADDR[UAVindex])
+        counter = counter + 1
         t = t + 1
         time.sleep(Time[t+1] - Time[t])    
 Send()
