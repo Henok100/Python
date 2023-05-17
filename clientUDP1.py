@@ -80,7 +80,7 @@ def Send():
     t = -1
     counter = 5;
     for Rowindex in range(NUMRows):
-        if(counter % 5 == 0):
+        if(counter % 15 == 0):
             SendProtocolMessage()
         
         for UAVindex in range(numUavs):
