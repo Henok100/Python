@@ -90,7 +90,7 @@ if __name__ == "__main__":
 	buildingIds = df['osm_id'].drop_duplicates()
 	for buildingId in buildingIds:
 		building = get_building(buildingId)
-		Height = random.randint(20, 100)
+		Height = random.randint(20, 110)
 		for index, wall in building.iterrows():
 			make_wall(wall, Height)
 
