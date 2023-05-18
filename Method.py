@@ -8,27 +8,16 @@ import socket
 df = []
 XYZ_NumPyArray = []
 
-# csv_filename = ['_20N/_20N_0_path_test.csv', \
-#                 '_20N/_20N_1_path_test.csv', \
-#                 '_20N/_20N_2_path_test.csv', \
-#                 '_20N/_20N_3_path_test.csv', \
-#                 '_20N/_20N_4_path_test.csv', \
-#                 '_20N/_20N_5_path_test.csv', \
-#                 '_20N/_20N_6_path_test.csv', \
-#                 '_20N/_20N_7_path_test.csv', \
-#                 '_20N/_20N_8_path_test.csv', \
-#                 '_20N/_20N_9_path_test.csv']
-
-# csv_filename = ['_20m/_20m_0_path_test.csv', \
-#                 '_20m/_20m_1_path_test.csv', \
-#                 '_20m/_20m_2_path_test.csv', \
-#                 '_20m/_20m_3_path_test.csv', \
-#                 '_20m/_20m_4_path_test.csv', \
-#                 '_20m/_20m_5_path_test.csv', \
-#                 '_20m/_20m_6_path_test.csv', \
-#                 '_20m/_20m_7_path_test.csv', \
-#                 '_20m/_20m_8_path_test.csv', \
-#                 '_20m/_20m_9_path_test.csv']
+csv_filename = ['_20m/_20m_0_path_test.csv', \
+                '_20m/_20m_1_path_test.csv', \
+                '_20m/_20m_2_path_test.csv', \
+                '_20m/_20m_3_path_test.csv', \
+                '_20m/_20m_4_path_test.csv', \
+                '_20m/_20m_5_path_test.csv', \
+                '_20m/_20m_6_path_test.csv', \
+                '_20m/_20m_7_path_test.csv', \
+                '_20m/_20m_8_path_test.csv', \
+                '_20m/_20m_9_path_test.csv']
 
 # csv_filename = ['_60m/_60m_0_path_test.csv', \
 #                 '_60m/_60m_1_path_test.csv', \
@@ -41,16 +30,16 @@ XYZ_NumPyArray = []
 #                 '_60m/_60m_8_path_test.csv', \
 #                 '_60m/_60m_9_path_test.csv']
 
-csv_filename = ['_120m/_120m_0_path_test.csv', \
-                '_120m/_120m_1_path_test.csv', \
-                '_120m/_120m_2_path_test.csv', \
-                '_120m/_120m_3_path_test.csv', \
-                '_120m/_120m_4_path_test.csv', \
-                '_120m/_120m_5_path_test.csv', \
-                '_120m/_120m_6_path_test.csv', \
-                '_120m/_120m_7_path_test.csv', \
-                '_120m/_120m_8_path_test.csv', \
-                '_120m/_120m_9_path_test.csv']
+# csv_filename = ['_120m/_120m_0_path_test.csv', \
+#                 '_120m/_120m_1_path_test.csv', \
+#                 '_120m/_120m_2_path_test.csv', \
+#                 '_120m/_120m_3_path_test.csv', \
+#                 '_120m/_120m_4_path_test.csv', \
+#                 '_120m/_120m_5_path_test.csv', \
+#                 '_120m/_120m_6_path_test.csv', \
+#                 '_120m/_120m_7_path_test.csv', \
+#                 '_120m/_120m_8_path_test.csv', \
+#                 '_120m/_120m_9_path_test.csv']
 
 def PortList(numUavs):
     PORT = []
@@ -90,15 +79,10 @@ def PreProcessor(df):
     Location1 = df.round(1)
     Location1 = Location1.drop_duplicates(subset=['x(m)'], keep='last')
     Location1 = Location1.drop_duplicates(subset=['y(m)'], keep='last')
+ 
 
-    # Location1['x(m)'] = Location1['x(m)'] - 429603.72
-    # Location1['y(m)'] = Location1['y(m)'] - 4581181.60    
-
-    Location1['x(m)'] = Location1['x(m)'] - 429916.97
-    Location1['y(m)'] = Location1['y(m)'] - 4580865.01
-
-    # Location1['x(m)'] = Location1['x(m)'] - 429900.38
-    # Location1['y(m)'] = Location1['y(m)'] - 4581310.80
+    Location1['x(m)'] = Location1['x(m)'] - 429346.80
+    Location1['y(m)'] = Location1['y(m)'] - 4583151.56
 
     Location1 = Location1.drop_duplicates(subset=['x(m)'], keep='last')
     Location1 = Location1.drop_duplicates(subset=['y(m)'], keep='last')

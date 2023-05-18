@@ -23,27 +23,16 @@ ADDR = Method.AddrList(CLIENT, PORT, numUavs)
 PORT_Protocol = 9000
 ADDR_Protocol = (CLIENT, PORT_Protocol)  
 
-# csv_filename = ['_20N/_20N_0_path_test.csv', \
-#                 '_20N/_20N_1_path_test.csv', \
-#                 '_20N/_20N_2_path_test.csv', \
-#                 '_20N/_20N_3_path_test.csv', \
-#                 '_20N/_20N_4_path_test.csv', \
-#                 '_20N/_20N_5_path_test.csv', \
-#                 '_20N/_20N_6_path_test.csv', \
-#                 '_20N/_20N_7_path_test.csv', \
-#                 '_20N/_20N_8_path_test.csv', \
-#                 '_20N/_20N_9_path_test.csv']
-
-# csv_filename = ['_20m/_20m_0_path_test.csv', \
-#                 '_20m/_20m_1_path_test.csv', \
-#                 '_20m/_20m_2_path_test.csv', \
-#                 '_20m/_20m_3_path_test.csv', \
-#                 '_20m/_20m_4_path_test.csv', \
-#                 '_20m/_20m_5_path_test.csv', \
-#                 '_20m/_20m_6_path_test.csv', \
-#                 '_20m/_20m_7_path_test.csv', \
-#                 '_20m/_20m_8_path_test.csv', \
-#                 '_20m/_20m_9_path_test.csv']
+csv_filename = ['_20m/_20m_0_path_test.csv', \
+                '_20m/_20m_1_path_test.csv', \
+                '_20m/_20m_2_path_test.csv', \
+                '_20m/_20m_3_path_test.csv', \
+                '_20m/_20m_4_path_test.csv', \
+                '_20m/_20m_5_path_test.csv', \
+                '_20m/_20m_6_path_test.csv', \
+                '_20m/_20m_7_path_test.csv', \
+                '_20m/_20m_8_path_test.csv', \
+                '_20m/_20m_9_path_test.csv']
 
 # csv_filename = ['_60m/_60m_0_path_test.csv', \
 #                 '_60m/_60m_1_path_test.csv', \
@@ -56,16 +45,16 @@ ADDR_Protocol = (CLIENT, PORT_Protocol)
 #                 '_60m/_60m_8_path_test.csv', \
 #                 '_60m/_60m_9_path_test.csv']
 
-csv_filename = ['_120m/_120m_0_path_test.csv', \
-                '_120m/_120m_1_path_test.csv', \
-                '_120m/_120m_2_path_test.csv', \
-                '_120m/_120m_3_path_test.csv', \
-                '_120m/_120m_4_path_test.csv', \
-                '_120m/_120m_5_path_test.csv', \
-                '_120m/_120m_6_path_test.csv', \
-                '_120m/_120m_7_path_test.csv', \
-                '_120m/_120m_8_path_test.csv', \
-                '_120m/_120m_9_path_test.csv']
+# csv_filename = ['_120m/_120m_0_path_test.csv', \
+#                 '_120m/_120m_1_path_test.csv', \
+#                 '_120m/_120m_2_path_test.csv', \
+#                 '_120m/_120m_3_path_test.csv', \
+#                 '_120m/_120m_4_path_test.csv', \
+#                 '_120m/_120m_5_path_test.csv', \
+#                 '_120m/_120m_6_path_test.csv', \
+#                 '_120m/_120m_7_path_test.csv', \
+#                 '_120m/_120m_8_path_test.csv', \
+#                 '_120m/_120m_9_path_test.csv']
 
 ClientSocket = Method.SocketCreator()
 
