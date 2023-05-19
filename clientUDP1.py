@@ -80,8 +80,8 @@ def Send():
     t = -1
     counter = 1;
     for Rowindex in range(NUMRows):
-        #if(counter % 3 == 0):
-        #SendProtocolMessage()
+        #if(counter % 20 == 0):
+        SendProtocolMessage()
         
         for UAVindex in range(numUavs):
             temp = XYZ_NumPyArray[UAVindex] 

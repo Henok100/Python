@@ -81,8 +81,8 @@ def PreProcessor(df):
     Location1 = Location1.drop_duplicates(subset=['y(m)'], keep='last')
  
 
-    Location1['x(m)'] = Location1['x(m)'] - 429293.89
-    Location1['y(m)'] = Location1['y(m)'] - 4581861.84
+    Location1['x(m)'] = Location1['x(m)'] - 427879.92
+    Location1['y(m)'] = Location1['y(m)'] - 4581845.82
 
     Location1 = Location1.drop_duplicates(subset=['x(m)'], keep='last')
     Location1 = Location1.drop_duplicates(subset=['y(m)'], keep='last')
