@@ -1,14 +1,14 @@
-Total time: 0:04:19
-	UAV 0: 0:04:10
-	UAV 1: 0:04:11
-	UAV 2: 0:04:12
-	UAV 3: 0:04:13
-	UAV 4: 0:04:14
-	UAV 5: 0:04:15
-	UAV 6: 0:04:16
-	UAV 7: 0:04:17
-	UAV 8: 0:04:18
-	UAV 9: 0:04:19
+Total time: 0:07:14
+	UAV 0: 0:07:05
+	UAV 1: 0:07:06
+	UAV 2: 0:07:07
+	UAV 3: 0:07:08
+	UAV 4: 0:07:09
+	UAV 5: 0:07:10
+	UAV 6: 0:07:11
+	UAV 7: 0:07:12
+	UAV 8: 0:07:13
+	UAV 9: 0:07:14
 
 Simulation parameters:
 	Number of UAVs: 10
