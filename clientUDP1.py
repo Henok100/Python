@@ -12,7 +12,7 @@ FORMAT = 'utf-8'
 
 #For UAVs
 
-numUavs = 10     #Change the number as desired.
+numUavs = 11     #Change the number as desired.
 numRows = []
 LocationList = []
 
@@ -32,29 +32,31 @@ ADDR_Protocol = (CLIENT, PORT_Protocol)
 #                 '_20m/_20m_6_path_test.csv', \
 #                 '_20m/_20m_7_path_test.csv', \
 #                 '_20m/_20m_8_path_test.csv', \
-#                 '_20m/_20m_9_path_test.csv']
+#                 '_20m/_20m_9_path_test.csv',
+#                 '_20m/_20m_10_path_test.csv']
 
-csv_filename = ['_60m/_60m_0_path_test.csv', \
-                '_60m/_60m_1_path_test.csv', \
-                '_60m/_60m_2_path_test.csv', \
-                '_60m/_60m_3_path_test.csv', \
-                '_60m/_60m_4_path_test.csv', \
-                '_60m/_60m_5_path_test.csv', \
-                '_60m/_60m_6_path_test.csv', \
-                '_60m/_60m_7_path_test.csv', \
-                '_60m/_60m_8_path_test.csv', \
-                '_60m/_60m_9_path_test.csv']
+# csv_filename = ['_60m/_60m_0_path_test.csv', \
+#                 '_60m/_60m_1_path_test.csv', \
+#                 '_60m/_60m_2_path_test.csv', \
+#                 '_60m/_60m_3_path_test.csv', \
+#                 '_60m/_60m_4_path_test.csv', \
+#                 '_60m/_60m_5_path_test.csv', \
+#                 '_60m/_60m_6_path_test.csv', \
+#                 '_60m/_60m_7_path_test.csv', \
+#                 '_60m/_60m_8_path_test.csv', \
+#                 '_60m/_60m_9_path_test.csv']
 
-# csv_filename = ['_120m/_120m_0_path_test.csv', \
-#                 '_120m/_120m_1_path_test.csv', \
-#                 '_120m/_120m_2_path_test.csv', \
-#                 '_120m/_120m_3_path_test.csv', \
-#                 '_120m/_120m_4_path_test.csv', \
-#                 '_120m/_120m_5_path_test.csv', \
-#                 '_120m/_120m_6_path_test.csv', \
-#                 '_120m/_120m_7_path_test.csv', \
-#                 '_120m/_120m_8_path_test.csv', \
-#                 '_120m/_120m_9_path_test.csv']
+csv_filename = ['_120m/_120m_0_path_test.csv', \
+                '_120m/_120m_1_path_test.csv', \
+                '_120m/_120m_2_path_test.csv', \
+                '_120m/_120m_3_path_test.csv', \
+                '_120m/_120m_4_path_test.csv', \
+                '_120m/_120m_5_path_test.csv', \
+                '_120m/_120m_6_path_test.csv', \
+                '_120m/_120m_7_path_test.csv', \
+                '_120m/_120m_8_path_test.csv', \
+                '_120m/_120m_9_path_test.csv',
+                '_120m/_120m_10_path_test.csv']
 
 ClientSocket = Method.SocketCreator()
 
@@ -80,60 +82,60 @@ def Send():
     t = -1
     counter = 1;
     for Rowindex in range(NUMRows):
-        if(counter % 15 == 0):
+        if(counter % 3 == 0):
             SendProtocolMessage()
         
         for UAVindex in range(numUavs):
             temp = XYZ_NumPyArray[UAVindex]
             #For UAV to GND 
-            # if UAVindex == 1:
-            #     x = 700
-            #     y = -400
-            #     z = 0
-            # elif UAVindex == 3:
-            #     x = 200
-            #     y = 150
-            #     z = 0
-            # elif UAVindex == 5:
-            #     x = -200
-            #     y = 250
-            #     z = 0
-            # elif UAVindex == 7:
-            #     x = 400
-            #     y = 370
-            #     z = 0
-            # elif UAVindex == 9:
-            #     x = -500
-            #     y = 170
-            #     z = 0
-            # elif UAVindex == 2:
-            #     x = temp[Rowindex][0]
-            #     y = temp[Rowindex][1]
-            #     z = 0
-            # elif UAVindex == 2:
-            #     x = temp[Rowindex][0]
-            #     y = temp[Rowindex][1]
-            #     z = 0
-            # elif UAVindex == 4:
-            #     x = temp[Rowindex][0]
-            #     y = temp[Rowindex][1]
-            #     z = 0
-            # elif UAVindex == 6:
-            #     x = temp[Rowindex][0]
-            #     y = temp[Rowindex][1]
-            #     z = 0     
-            # elif UAVindex == 8:
-            #     x = temp[Rowindex][0]
-            #     y = temp[Rowindex][1]
-            #     z = 0         
-            # elif UAVindex == 0:
-            #     x = temp[Rowindex][0]
-            #     y = temp[Rowindex][1]
-            #     z = temp[Rowindex][2]
+            if UAVindex == 1:
+                x = 600
+                y = -400
+                z = 0
+            elif UAVindex == 3:
+                x = 200
+                y = 150
+                z = 0
+            elif UAVindex == 5:
+                x = -200
+                y = 250
+                z = 0
+            elif UAVindex == 7:
+                x = 400
+                y = 370
+                z = 0
+            elif UAVindex == 9:
+                x = -500
+                y = 170
+                z = 0
+            elif UAVindex == 2:
+                x = temp[Rowindex][0]
+                y = temp[Rowindex][1]
+                z = 0
+            elif UAVindex == 4:
+                x = temp[Rowindex][0]
+                y = temp[Rowindex][1]
+                z = 0
+            elif UAVindex == 6:
+                x = temp[Rowindex][0]
+                y = temp[Rowindex][1]
+                z = 0
+            elif UAVindex == 8:
+                x = temp[Rowindex][0]
+                y = temp[Rowindex][1]
+                z = 0     
+            elif UAVindex == 10:
+                x = temp[Rowindex][0]
+                y = temp[Rowindex][1]
+                z = 0         
+            elif UAVindex == 0:
+                x = temp[Rowindex][0]
+                y = temp[Rowindex][1]
+                z = temp[Rowindex][2]
             ## UAV to UAV
-            x = temp[Rowindex][0]
-            y = temp[Rowindex][1]
-            z = temp[Rowindex][2]
+            # x = temp[Rowindex][0]
+            # y = temp[Rowindex][1]
+            # z = temp[Rowindex][2]
             toSend = "{X},{Y},{Z}".format(X = round(x, 1), Y = round(y, 1), Z = round(z, 1))
             print(toSend)
             print("UAV ", str(UAVindex))
