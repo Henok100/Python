@@ -2,7 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import matplotlib.ticker as ticker
 
-files = ['UAVtoUAVDense/FSP.csv', 'UAVtoUAVDense/TRG.csv', 'UAVtoUAVDense/LNS.csv', 'UAVtoUAVDense/RF.csv', 'UAVtoUAVDense/NF.csv']
+files = ['UAVtoGNDDense/FSP.csv', 'UAVtoGNDDense/TRG.csv', 'UAVtoGNDDense/LNS.csv', 'UAVtoGNDDense/RF.csv', 'UAVtoGNDDense/NF.csv']
 data = []
 xlabel = ['FreeSpacePathLoss', 'TwoRayGroundReflection', 'LogNormalShadowing', 'RicianFading', 'NakagamiFading']
 
@@ -29,7 +29,7 @@ fig.subplots_adjust(wspace=0.4)
 for i, ax in enumerate(axs):
     ax.yaxis.set_major_formatter(ticker.FuncFormatter(lambda y, _: '{:.0%}'.format(y)))
     ax.set_xlabel(xlabel[i])
-    ax.set_ylabel('Packet delivery ratio ')
+    ax.set_ylabel('Packet Delivery Ratio ')
 
 # Display the plot
 plt.show()
