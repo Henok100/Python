@@ -1,0 +1,84 @@
+Freespace
+Module	Value	
+Module	Value	
+Network.host[0].udp	2,180	
+Network.host[1].udp	1,364	
+Network.host[2].udp	1,364	
+Network.host[3].udp	1,244	
+Network.host[4].udp	1,364	
+Network.host[5].udp	1,078	
+Network.host[6].udp	1,364	
+Network.host[7].udp	1,355	
+Network.host[8].udp	1,364	
+Network.host[9].udp	1,150	
+Network.host[10].udp	1,364	
+
+
+TwoRayGround
+Module	Value	
+Module	Value	
+Network.host[0].udp	2,180	
+Network.host[1].udp	1,363	
+Network.host[2].udp	1,363	
+Network.host[3].udp	1,243	
+Network.host[4].udp	1,363	
+Network.host[5].udp	1,077	
+Network.host[6].udp	1,363	
+Network.host[7].udp	1,354	
+Network.host[8].udp	1,363	
+Network.host[9].udp	1,149	
+Network.host[10].udp	1,363	
+
+
+
+LogNormal
+Module	Value	
+Module	Value	
+Network.host[0].udp	2,180	
+Network.host[1].udp	246	
+Network.host[2].udp	3	
+Network.host[3].udp	319	
+Network.host[4].udp	14	
+Network.host[5].udp	70	
+Network.host[6].udp	38	
+Network.host[7].udp	26	
+Network.host[8].udp	71	
+Network.host[9].udp	245	
+Network.host[10].udp	184	
+
+	
+
+ricianfading
+Module	Value	
+Module	Value	
+Network.host[0].udp	2,180	
+Network.host[1].udp	1,237	
+Network.host[2].udp	1,092	
+Network.host[3].udp	1,139	
+Network.host[4].udp	1,158	
+Network.host[5].udp	1,023	
+Network.host[6].udp	1,197	
+Network.host[7].udp	1,152	
+Network.host[8].udp	1,256	
+Network.host[9].udp	1,083	
+Network.host[10].udp	1,264	
+
+
+
+
+Nakagami fading
+Module	Value	
+Module	Value	
+Network.host[0].udp	2,180	
+Network.host[1].udp	1,220	
+Network.host[2].udp	1,124	
+Network.host[3].udp	1,182	
+Network.host[4].udp	1,168	
+Network.host[5].udp	1,030	
+Network.host[6].udp	1,234	
+Network.host[7].udp	1,174	
+Network.host[8].udp	1,274	
+Network.host[9].udp	1,094	
+Network.host[10].udp	1,303	
+
+
