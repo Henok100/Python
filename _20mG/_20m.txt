@@ -1,0 +1,47 @@
+Total time: 0:04:31
+	UAV 0: 0:04:21
+	UAV 1: 0:04:22
+	UAV 2: 0:04:23
+	UAV 3: 0:04:24
+	UAV 4: 0:04:26
+	UAV 5: 0:04:26
+	UAV 6: 0:04:28
+	UAV 7: 0:04:29
+	UAV 8: 0:04:29
+	UAV 9: 0:04:30
+	UAV 10: 0:04:31
+
+Simulation parameters:
+	Number of UAVs: 11
+	Initial speed (m/s):
+	10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0
+	10.0
+Performance parameters:
+	Screen refresh rate: 500 ms
+	Minimum screen redraw distance: 5.0 pixels
+	Enable arducopter logging: disabled
+	Restrict battery capacity: no
+	Measure CPU use: disabled
+General parameters:
+	Enable verbose logging: disabled
+UAV synchronization protocol: Mission
+UAV to UAV communications parameters:
+	Carrier sensing enabled: true
+	Packet Collision detection enabled: true
+	Receiving buffer size: 163840 bytes
+	Wireless communications model: 802.11a with 5dBi antenna
+	Total sent packets: 0
+UAV Collision detection parameters:
+	Enable collision detection: no
+Wind: no
+Additional parameters (ardusim.ini):
+	KMLMINALTITUDE=5.0
+	KMLOVERRIDEALTITUDE=false
+	KMLMISSIONEND=unmodified
+	KMLWAYPOINTDELAY=0
+	Swarm formation parameters:
+		GROUNDFORMATION=LINEAR
+		GROUNDDISTANCE=10.0
+		AIRFORMATION=LINEAR
+		AIRDISTANCE=50.0
+		LANDDISTANCE=2.5
