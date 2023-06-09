@@ -88,8 +88,8 @@ def Send():
     Mov8 = M.Mov8()
     Mov10 = M.Mov10()
     for Rowindex in range(NUMRows):
-      #  if counter % 3 == 0:
-        #    SendProtocolMessage()
+        if counter % 3 == 0:
+            SendProtocolMessage()
         
         for UAVindex in range(numUavs):
             temp = XYZ_NumPyArray[UAVindex]
@@ -138,7 +138,7 @@ def Send():
                 x = temp[Rowindex][0]
                 y = temp[Rowindex][1]
                 z = temp[Rowindex][2]
-            # UAV to UAV
+            ## UAV to UAV
             # x = temp[Rowindex][0]
             # y = temp[Rowindex][1]
             # z = temp[Rowindex][2]
