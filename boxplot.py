@@ -2,7 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import matplotlib.ticker as ticker
 
-files = ['UAVtoUAVDense/FSP.csv', 'UAVtoUAVDense/TRG.csv', 'UAVtoUAVDense/LNS.csv', 'UAVtoUAVDense/RF.csv', 'UAVtoUAVDense/NF.csv']
+files = ['UAVtoGNDDenseStraight/FSP.csv', 'UAVtoGNDDenseStraight/TRG.csv', 'UAVtoGNDDenseStraight/LNS.csv', 'UAVtoGNDDenseStraight/RF.csv', 'UAVtoGNDDenseStraight/NF.csv']
 data = []
 xlabel = ['FreeSpacePathLoss', 'TwoRayGroundReflection', 'LogNormalShadowing', 'RicianFading', 'NakagamiFading']
 
