@@ -18,7 +18,7 @@ XYZ_NumPyArray = []
 #                 '_20m/_20m_7_path_test.csv', \
 #                 '_20m/_20m_8_path_test.csv', \
 #                 '_20m/_20m_9_path_test.csv', \
-#                 '_20m/_20m_0_path_test.csv']
+#                 '_20m/_20m_10_path_test.csv']
 
 # csv_filename = ['_60m/_60m_0_path_test.csv', \
 #                 '_60m/_60m_1_path_test.csv', \
@@ -30,7 +30,7 @@ XYZ_NumPyArray = []
 #                 '_60m/_60m_7_path_test.csv', \
 #                 '_60m/_60m_8_path_test.csv', \
 #                 '_60m/_60m_9_path_test.csv', \
-#                 '_60m/_60m_0_path_test.csv']
+#                 '_60m/_60m_10_path_test.csv']
 
 csv_filename = ['_120m/_120m_0_path_test.csv', \
                 '_120m/_120m_1_path_test.csv', \
