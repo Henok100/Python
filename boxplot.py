@@ -2,7 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import matplotlib.ticker as ticker
 
-files = ['UAVtoGNDDenseStraight/FSP.csv', 'UAVtoGNDDenseStraight/TRG.csv', 'UAVtoGNDDenseStraight/LNS.csv', 'UAVtoGNDDenseStraight/RF.csv', 'UAVtoGNDDenseStraight/NF.csv']
+files = ['UAVtoUAVDense/FSP.csv', 'UAVtoUAVDense/TRG.csv', 'UAVtoUAVDense/LNS.csv', 'UAVtoUAVDense/RF.csv', 'UAVtoUAVDense/NF.csv']
 data = []
 xlabel = ['FreeSpacePathLoss', 'TwoRayGroundReflection', 'LogNormalShadowing', 'RicianFading', 'NakagamiFading']
 
@@ -28,8 +28,11 @@ fig.subplots_adjust(wspace=0.4)
 # Set the y-axis tick formatter to display values as percent
 for i, ax in enumerate(axs):
     ax.yaxis.set_major_formatter(ticker.FuncFormatter(lambda y, _: '{:.0%}'.format(y)))
-    ax.set_xlabel(xlabel[i])
-    ax.set_ylabel('Packet Delivery Ratio ')
+    ax.set_xlabel(xlabel[i]).set_color('blue')
+    ax.set_ylabel('Packet Delivery Ratio ').set_color('blue')
+
+#Super Title
+plt.suptitle("UAV-to-UAV Performance in Urban Environment", fontsize=16).set_color('blue')
 
 # Display the plot
 plt.show()
