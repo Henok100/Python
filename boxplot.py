@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import matplotlib.ticker as ticker
 
 #files = ['UAVtoUAVDense/FSP.csv', 'UAVtoUAVDense/TRG.csv', 'UAVtoUAVDense/LNS.csv', 'UAVtoUAVDense/RF.csv', 'UAVtoUAVDense/NF.csv']
-files = ['UAVtoUAVDense/LNS.csv', 'UAVtoUAVDense/RF.csv', 'UAVtoUAVDense/NF.csv']
+files = ['UAVtoGNDDenseCurved/LNS.csv', 'UAVtoGNDDenseCurved/RF.csv', 'UAVtoGNDDenseCurved/NF.csv']
 
 data = []
 xlabel = ['LogNormalShadowing', 'RicianFading', 'NakagamiFading']
@@ -35,7 +35,7 @@ for i, ax in enumerate(axs):
     ax.set_ylabel('Packet Delivery Ratio', fontsize = 16).set_color('blue')
 
 #Super Title
-plt.suptitle("UAV-to-UAV Performance in Urban Environment", fontsize=24).set_color('blue')
+plt.suptitle("UAV-to-GND Performance in NLOS Environment", fontsize=24).set_color('blue')
 
 # Display the plot
 plt.show()
